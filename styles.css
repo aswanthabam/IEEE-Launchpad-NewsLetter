@@ -1,0 +1,138 @@
+body {
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+* {
+  font-family: "Nunito", sans-serif;
+}
+.title {
+  width: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.title .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title .logo img {
+  height: 50px;
+}
+
+.title .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.title .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title .menu a:hover {
+  color: rgb(227, 142, 13);
+}
+.content {
+  width: calc(100% - 60px);
+  padding: 30px;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.content img {
+  width: 70%;
+}
+.content h1 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+.content h2 {
+  width: 100%;
+  text-align: start;
+  font-size: 30px;
+  color: #f4b96d;
+}
+
+.content .updates {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content .updates .update {
+  padding: 20px;
+  width: calc(100% - 60px);
+  border-radius: 10px;
+  background: #333;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content ul {
+  width: 100%;
+}
+.content ul li {
+  padding: 10px;
+}
+
+.footer {
+  width: calc(100% - 60px);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid #fff;
+}
+
+.footer .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffffff90;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    flex-direction: column;
+  }
+  .title .menu {
+    margin-top: 20px;
+  }
+  .content img {
+    width: 100%;
+  }
+  .content .updates {
+    grid-template-columns: 1fr;
+  }
+  .content .updates .update {
+    width: calc(100% - 40px);
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .footer .info {
+    flex-direction: column;
+  }
+}
