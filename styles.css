@@ -114,6 +114,22 @@ body {
   font-size: 15px;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f19e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f69942;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f36767;
+}
+
 @media only screen and (max-width: 600px) {
   .title {
     flex-direction: column;
